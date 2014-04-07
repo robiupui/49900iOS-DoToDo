@@ -13,11 +13,25 @@
 @end
 
 @implementation DoToDoViewController
+@synthesize lblDevice;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        [lblDevice setText:@"I'm an iPhone"];
+    }
+    else
+    {
+        [lblDevice setText:@"I'm an iPad"];
+    }
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

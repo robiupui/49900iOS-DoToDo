@@ -10,4 +10,7 @@
 
 @interface DoToDoViewController : UIViewController
 
+
+@property (weak, nonatomic) IBOutlet UILabel *lblDevice;
+
 @end
