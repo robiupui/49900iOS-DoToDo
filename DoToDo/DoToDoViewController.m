@@ -22,7 +22,7 @@
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
     {
-        [lblDevice setText:@"I'm an iPhone"];
+        [lblDevice setText:@"I'm an iPhone and this is a test"];
     }
     else
     {
